@@ -6,7 +6,6 @@ import com.amazonaws.services.s3.AmazonS3Client;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-<<<<<<< HEAD
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.superbiz.moviefun.blobstore.BlobStore;
@@ -17,20 +16,6 @@ import org.superbiz.moviefun.blobstore.ServiceCredentials;
 public class Application {
 
     public static void main(String[] args) {
-=======
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.context.annotation.Bean;
-
-@SpringBootApplication(exclude = {
-        DataSourceAutoConfiguration.class,
-        HibernateJpaAutoConfiguration.class
-})
-public class Application {
-
-    public static void main(String... args) {
->>>>>>> my-temporary-work
         SpringApplication.run(Application.class, args);
     }
 
