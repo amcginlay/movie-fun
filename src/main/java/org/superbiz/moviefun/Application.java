@@ -15,7 +15,7 @@ import org.superbiz.moviefun.blobstore.ServiceCredentials;
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
         SpringApplication.run(Application.class, args);
     }
 
@@ -31,8 +31,8 @@ public class Application {
 
     @Bean
     public BlobStore blobStore(
-            ServiceCredentials serviceCredentials,
-            @Value("${vcap.services.photo-storage.credentials.endpoint:#{null}}") String endpoint
+        ServiceCredentials serviceCredentials,
+        @Value("${vcap.services.photo-storage.credentials.endpoint:#{null}}") String endpoint
     ) {
         String photoStorageAccessKeyId = serviceCredentials.getCredential("photo-storage", "user-provided", "access_key_id");
         String photoStorageSecretKey = serviceCredentials.getCredential("photo-storage", "user-provided", "secret_access_key");

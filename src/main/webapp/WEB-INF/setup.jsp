@@ -14,12 +14,6 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 --%>
-<<<<<<< HEAD:src/main/webapp/WEB-INF/setup.jsp
-<%@ page import=" org.superbiz.moviefun.Movie" %>
-<%@ page import="java.util.Iterator" %>
-<%@ page import="java.util.List" %>
-=======
->>>>>>> my-temporary-work:src/main/webapp/WEB-INF/setup.jsp
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>

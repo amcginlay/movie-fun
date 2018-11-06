@@ -26,7 +26,6 @@ import static org.springframework.http.MediaType.IMAGE_JPEG_VALUE;
 public class AlbumsController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-
     private final AlbumsBean albumsBean;
     private final BlobStore blobStore;
 
@@ -57,7 +56,7 @@ public class AlbumsController {
                 tryToUploadCover(albumId, uploadedFile);
 
             } catch (IOException e) {
-                logger.error("There was an error while uploading album cover", e);
+                logger.warn("Error while uploading album cover", e);
             }
         }
 
